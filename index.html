@@ -89,7 +89,7 @@
 
 <body>
   <!-- Header section  --> 
-    <section class="border-2 border-green-900 ">
+    <section class="border-2 border-green-900">
       <!-- Navbar -->
        <div class=" flex justify-between  p-2 h-auto">
            <img class="h-[48px] w-[48px]" src="./c1-assets/logo-header.png" alt="">
@@ -175,7 +175,7 @@
            
          </section>
 
-           <!-- section pet products -->
+           <!-- section trending pet products -->
            <section class="mb-16 border-2 border-green-900 px-4">
             <h1 class="adlam font-normal text-2xl mb-4">Trending Pet Products</h1>
 
@@ -185,8 +185,8 @@
                     <h1 class="adlam font-semibold text-2xl md:relative">T-shirt For Dogs</h1>
                     <p class="font-normal poppins text-xl">Discover a world of treats, toys and essentials handpicked for</p>
                     <button class="px-6 py-2 bg-white text-2xl font-semibold rounded-xl">Shop Now</button>
-                      <div class="relative md:absolute left-[130px] md:left-[180px] -top-[140px] w-[200px] h-[315px]">
-                         <img class="w-[190px] h-[310px] border-2 border-red-500" src="./c1-assets/cute-pet-small.png" alt="">
+                      <div class="relative  left-[130px]  -top-[140px] w-[200px] h-[315px]">
+                         <img class="w-[190px] h-[310px] border-2 border-red-500" src="./c1-assets/cute-pet-small.png" alt="ok">
                       </div>
                  </div>
   
@@ -293,7 +293,7 @@
            </section>
 
            <!-- Everyday Low Price -->
-            <section class="mb-16 px-4  border-2 border-green-600">
+            <section class="mb-[310px] px-4  border-2 border-green-600 ">
               <h1 class="adlam font-normal text-2xl mb-4">Everyday Low Price</h1>
               <div class="space-y-5">
                 <!-- first part -->
@@ -331,35 +331,55 @@
             </section>
      </main>
 
-     <footer
-  class="footer bg-[rgba(255,220,38,0.5);] text-base-content px-4">
+      <!-- footer part -->
+      <footer class="relative grid lg:grid-cols-1 space-y-8  bg-[#FFDC26] pb-[200px] 
+      pt-[280px] px-10">
 
-    <nav>
-      <div class="flex justify-center items-center gap-2">
-        <img src="./c1-assets/logo-footer.png" alt="">
-        <h1 class="font-bold text-2xl adlam">Browse Pets</h1>
-      </div>
-      <p class="sora font-normal text-xl text-[rgba(15,15,15,0.7)]">
-        Discover a world of treats, toys, <br> and essentials handpicked for your furry <br> friends
-      </p>
-    </nav>
-    <nav>
-      <a class="sora font-normal text-xl hover:text-green-950 text-[rgb(15,15,15)] link link-hover">Product</a>
-      <a class="sora font-normal text-xl hover:text-green-950 text-[rgb(15,15,15)] link link-hover">Services</a>
-      <a class="sora font-normal text-xl hover:text-green-950 text-[rgb(15,15,15)] link link-hover">Contact us</a>
-    </nav>
-    <nav>
-      <h6 class=" sora font-normal text-xl text-[rgb(15,15,15)]">Follow Us</h6>
-      <div class="space-x-2">
-        <i class="text-black hover:text-green-950 text-2xl fa-brands fa-facebook"></i>
-        <i class="text-black hover:text-green-950 text-2xl fa-brands fa-instagram"></i>
-        <i class="text-black hover:text-green-950 text-2xl fa-brands fa-linkedin"></i>
-        <i class="text-black hover:text-green-950 text-2xl fa-brands fa-youtube"></i>
-      </div>
+        <!-- footer adjust part -->
+         <!-- <div class="bg-red-400 h-[300px] absolute z-10 container w-11/12 bottom-[100%] left-1/2 -translate-x-1/2 translate-y-1/2"> -->
+        <div class="bg-[rgb(255,249,244)] rounded-xl h-[520px] absolute z-10
+         container w-11/12 right-1/2 translate-x-1/2 -translate-y-1/2 py-7">
 
-    </nav>
+            <div class="flex flex-col items-center text-center space-y-4">
+               <img class="w-[180px] h-[230px] border-2" src="./c1-assets/cute-pet-mid.png" alt="">
+               <h1 class="adlam font-normal text-[22px]">Get Pawsome News!</h1>
+               <p class="sora font-normal text-[1rem] w-[330px]">Exclusive training tips, ticks, product deals and more.</p>
+               <input type="text" placeholder="Enter email..." class="pl-3 py-3 rounded-md bg-white border-2 w-[70%]">
+                 <div>
+                  <button class="sora font-normal 
+                  rounded-md border-none text-[0.75rem] px-6 py-3 bg-[rgb(255,220,38)]">Subscribe</button>
+                 </div>
+            </div>
+           
+         </div>
 
-  </footer>
+         <!-- main footer -->
+        <nav class="">
+          <div class="flex gap-4  items-center">
+            <img src="./c1-assets/logo-footer.png" alt="">
+            <h1 class="font-semibold text-4xl">Pets</h1>
+          </div>
+          <p class="sora font-normal text-xl text-black">
+            Discover a world of treats, toys, <br> and essentials handpicked for your furry <br> friends
+          </p>
+        </nav>
+        <nav class="flex-col flex">
+          <a class="sora font-normal text-xl hover:text-green-950 text-black link link-hover">Product</a>
+          <a class="sora font-normal text-xl hover:text-green-950 text-black link link-hover">Services</a>
+          <a class="sora font-normal text-xl hover:text-green-950 text-black link link-hover">Contact us</a>
+        </nav>
+        <nav>
+          <h6 class=" sora font-normal text-xl text-black">Follow Us</h6>
+          <div class="space-x-2">
+            <i class="text-black hover:text-green-950 text-2xl fa-brands fa-facebook"></i>
+            <i class="text-black hover:text-green-950 text-2xl fa-brands fa-instagram"></i>
+            <i class="text-black hover:text-green-950 text-2xl fa-brands fa-linkedin"></i>
+            <i class="text-black hover:text-green-950 text-2xl fa-brands fa-youtube"></i>
+          </div>
+        
+        </nav>
+      </footer>
+       
 </body>
 
 </html>
@@ -367,3 +387,4 @@
 
 <!-- Live Link : https://hasnatkallol.github.io/Living-Lab/
 Repo Link : https://github.com/Hasnatkallol/Living-Lab -->
+
