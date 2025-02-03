@@ -91,32 +91,68 @@
   <!-- Header section  --> 
     <section class="">
       <!-- Navbar -->
-       <div class=" flex justify-between  p-2 h-auto">
+       <div class="lg:hidden flex justify-between  p-2 h-auto">
            <img class="h-[48px] w-[48px]" src="./c1-assets/logo-header.png" alt="">
            <i class="fa-solid fa-bars text-4xl"></i>
        </div>
+       <nav class="hidden lg:block bg-[rgb(255,249,244)] pt-3 container w-11/12 mx-auto py-5">
+        <div class="flex justify-between ">
+          <div class="flex gap-3 w-[300px] items-center">
+            <img class="" src="./c1-assets/logo-header.png" alt="">
+            <h1 class="font-semibold text-4xl ">Browse Pets</h1>
+          </div>
+          <div class="mt-1 flex items-center">
+            <ul class="flex space-x-4">
+              <li><a class="sora text font-normal text-xl hover:text-green-500 text-[rgb(17,17,17)]" href="">Find a pet</a>
+              </li>
+              <li><a class="sora text font-normal text-xl hover:text-green-500 text-[rgb(17,17,17)]"
+                  href="">Breads</a></li>
+              <li><a class="sora text font-normal text-xl hover:text-green-500 text-[rgb(17,17,17)]" href="">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center  space-x-4">
+            <i class="fa-solid mt-[15px] p-0 fa-magnifying-glass"></i>
+            <i class="fa-solid mt-[15px] fa-cart-shopping"></i>
+            <button
+              class=" sora text font-normal text-xl text-[rgb(17,17,17)]
+               border rounded-md border-yellow-400 bg-white px-5 py-2 
+               hover:bg-yellow-400 hover:text-white">Login</button>
+            <button
+              class=" sora text font-normal text-xl px-3 py-2 rounded-md text-white
+              bg-yellow-400">Register</button>
+          </div>
+        </div>
+      </nav>
 
        <!-- banner -->
-      
+      <div class="container mx-auto w-11/12 mt-4  lg:h-[920px] border-red-700 border-2 ">
+
+        <div class="hidden lg:block top-[100px] left-[200px] h-[900px] w-[1500px]  z-1 absolute
+        bg-[url('./c1-assets/cat-big.png')] bg-center bg-no-repeat bg-cover rounded-xl">
+       </div>
+               
+
             <!-- text part -->
-         <div class=" h-[450px] mb-[60px] pl-4">
-          <div class="space-y-5">
-               <div class="h-[150px]  w-[340px]">
-                <h1 class="ml-[15px] scale-[1.1] adlam font-normal 
-                text-[1.8rem] animation   my-5">Pamper Your Pet, Because They Deserve the Best</h1>
+         <div class=" h-[450px] mb-[60px] pl-4 lg:pl-0">
+          <div class="space-y-5 ">
+               <div class="h-[150px]  w-[340px] lg:h-[250px] lg:w-[580px] ">
+                <h1 class="ml-[15px] lg:ml-[30px] scale-[1.1] adlam font-normal 
+                text-[1.8rem] lg:text-[3rem] animatio  my-5 ">Pamper Your Pet, Because They Deserve the Best</h1>
                </div>
-            <p class="   w-[358px] opacity-70  font-normal text-[1.8rem] sora ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <p class=" lg:w-[650px]  w-[358px] opacity-70  font-normal text-[1.8rem] lg:text-[1.25rem] sora ">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
           </div>
           <div class="w-[140px] ">
-            <button class="absolute mt-6  px-6 py-3 sora text-[1rem] font-normal rounded-lg text-white bg-yellow-400 z-10">Find a Pet</button>
+            <button class="absolute mt-6  px-6 py-3 sora text-[1rem] font-normal
+             rounded-lg text-white bg-yellow-400 z-10">Find a Pet</button>
           </div>
          </div>
 
               <!-- image part -->
-               <div class=" relative -top-[80px] -z-10">
-                  <img src="./c1-assets/cat-big.png" alt="">
+               <div class="relative -top-[80px]  lg:hidden  ">
+                  <img class="" src="./c1-assets/cat-big.png" alt="">
                </div>
-              
+        </div>        
       
     </section>
     
